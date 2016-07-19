@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/background_image"
+        android:scaleType="centerCrop" />
+    <Button
+        android:id="@+id/button_like"
+        android:layout_alignParentBottom="true"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:text="L"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="10sp"
+        android:textSize="20sp"
+        android:layout_gravity="bottom"/>
+    <Button
+        android:id="@+id/button_comment"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:text="C"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="15sp"
+        android:layout_toRightOf="@+id/button_like"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/button_tag"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:text="T"
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="15sp"
+        android:layout_toRightOf="@+id/button_comment"
+        android:textSize="20sp"/>
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@android:color/white"
+        android:layout_above="@+id/button_like"
+        android:layout_marginRight="35sp"
+        android:layout_marginLeft="35sp"
+        android:layout_marginBottom="20sp"/>
+    <TextView
+        android:id="@+id/caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Had a great view from our hotel room in Chicago!"
+        android:textSize="20sp"
+        android:layout_margin="20sp"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/divider_line"/>
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="#878787"
+        android:layout_marginBottom="23sp"
+        android:layout_marginLeft="60sp"
+        android:layout_toRightOf="@+id/button_tag"
+        android:text="17 likes"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
